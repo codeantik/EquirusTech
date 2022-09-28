@@ -1,6 +1,8 @@
 # EquirusTech
 
+## server - https://equirus-tech-backend.vercel.app/
 
+## client - 
 
 
 ![image](https://user-images.githubusercontent.com/73019590/192685843-4c49cc9c-49a2-4576-8dee-ca0b3aeea2f7.png)
