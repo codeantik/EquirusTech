@@ -14,7 +14,6 @@
       <p><b>Url:</b> {{ fund.login_url}}</p>
       <p><b>Phone Number:</b> {{ fund.phone_number}}</p>
       <p><b>Website:</b> {{ fund.website}}</p>
-
     </div>
   </div>
 </template>
