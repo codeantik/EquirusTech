@@ -21,13 +21,6 @@
 </template>
 
 <script>
-// import Content from '../components/Content.vue'
-
-// export default {
-//   components: {
-//     Content,
-//   },
-// }
 
   export default {
     data() {
@@ -37,7 +30,7 @@
       }
     },
     async fetch() {
-      const data = await fetch(`https://equirus-server.vercel.app/funds`).then(res => res.json());
+      const data = await fetch(`https://equirus-tech-backend.vercel.app/funds`).then(res => res.json());
       // console.log(data.data.Debt);
       const response = Object.entries(Object.values(data.data.Debt)[0])
       // console.log(Object.entries(Object.entries(data.data.Debt)[1]))

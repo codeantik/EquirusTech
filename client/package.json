@@ -4,17 +4,8 @@
   "author": {
     "name": "Ankit Singh"
   },
-  "license": "MIT",
-  "keywords": [
-    "ui",
-    "components",
-    "dashboard",
-    "admin",
-    "tailwindcss",
-    "nuxt",
-    "Nuxt.js",
-    "layout"
-  ],
+  "license": "",
+  "keywords": [],
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",

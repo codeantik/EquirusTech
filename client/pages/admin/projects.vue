@@ -1,11 +1,10 @@
 <template>
-  <!-- <Content title="Projects" /> -->
   <div>
     <h1 class="text-center text-4xl py-2">Details</h1>
     <p class="text-center" v-if="$fetchState.pending">Loading....</p>
     <p class="text-center" v-else-if="$fetchState.error">Error while fetching mountains</p>
     <div v-else class="flex flex-col justify-around px-5 py-3 bg-white">
-      <img class="w-10 nth-child(even):text-500" :src=fund.image alt="image"/>
+      <!-- <img class="w-10 nth-child(even):text-500" :src=fund.image alt="image"/> -->
       <p><b>AMC code:</b> {{ fund.AMC_code }}</p>
       <p><b>AMC name:</b> {{ fund.amc_name }}</p>
       <p><b>Address:</b> {{ fund.address }}</p>
@@ -21,7 +20,6 @@
 </template>
 
 <script>
-// import Content from '../../components/Content.vue'
 
 export default {
   data() {
@@ -38,7 +36,7 @@ export default {
     this.id = this.$route.params.id;
   },
   async fetch() {
-    const data = await fetch(`https://equirus-server.vercel.app/funds/${this.id}`).then(res => res.json());
+    const data = await fetch(`https://equirus-tech-backend.vercel.app/funds/${this.id}`).then(res => res.json());
     console.log(data.data);
     this.fund = data.data
     // this.image = data.data.image
